@@ -293,3 +293,19 @@ DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is depreca
   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
   [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "pins" ("title", "created_at", "updated_at", "image_url") VALUES (?, ?, ?, ?)[0m  [["title", "Luxury Car"], ["created_at", 2020-03-14 02:41:43 UTC], ["updated_at", 2020-03-14 02:41:43 UTC], ["image_url", "https://s3.amazonaws.com/makeitreal/pins/luxury-car.jpg"]]
   [1m[35m (74.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/" for 127.0.0.1 at 2020-03-13 21:48:44 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PinsController#index as HTML
+  Rendering pins/index.html.erb within layouts/application
+  [1m[36mPin Load (0.2ms)[0m  [1m[34mSELECT "pins".* FROM "pins" ORDER BY created_at DESC[0m
+  Rendered pins/index.html.erb within layouts/application (45.2ms)
+Completed 200 OK in 5170ms (Views: 5145.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-9906e3ad7efb24a5b3f127e6950a9aa92ea24709b4bc3e15db3396bbcebb1ba9.css?body=1" for 127.0.0.1 at 2020-03-13 21:48:49 -0500
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for 127.0.0.1 at 2020-03-13 21:48:49 -0500
+Started GET "/assets/masonry/jquery.masonry.self-e55a2ca40f0bd20129930439c10a6b8c5dd26787b41fd8427db5b9da8c2af52f.js?body=1" for 127.0.0.1 at 2020-03-13 21:48:49 -0500
+Started GET "/assets/pins.self-68755679ee21f68a2a14ab30434947b80d70dc96df4abd5dd2e3dbb89a7909e0.js?body=1" for 127.0.0.1 at 2020-03-13 21:48:49 -0500
+Started GET "/assets/tokens.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2020-03-13 21:48:49 -0500
+Started GET "/assets/application.self-b870f4765c2fcbf8cabec8478e3e32aa02ac855d9f609c451d170b187ee785a3.js?body=1" for 127.0.0.1 at 2020-03-13 21:48:49 -0500
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2020-03-13 21:48:49 -0500
